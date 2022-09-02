@@ -1,4 +1,4 @@
 
-export const Componenteperfil=() =>{
+export const Componenteperfil=({onComponenteperfil}) =>{
     
 }

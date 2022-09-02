@@ -1,4 +1,4 @@
 
-export const componentebusqueda=() =>{
+export const Componentebusqueda=({onComponentebusqueda}) =>{
     
 }

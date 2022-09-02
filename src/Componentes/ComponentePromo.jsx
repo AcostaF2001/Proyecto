@@ -1,4 +1,4 @@
 
-export const ComponentePromo=() =>{
+export const ComponentePromo=({onComponentePromo}) =>{
 
 }

@@ -1,4 +1,4 @@
 
-export const Carrito =() =>{
+export const Carrito =({onCarrito}) =>{
     
 }

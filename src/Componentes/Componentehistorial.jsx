@@ -1,4 +1,15 @@
+import { ListaPedidos } from "./ListaPedidos"
+export const Componentehistorial=({onComponentehistorial}) =>{
 
-export const Componentehistorial=() =>{
+    return(
+        <>
+        <ol>
+        
+        ListaPedidos.map(
+           
+        )
+        </ol>
+        </>
+    )
     
 }

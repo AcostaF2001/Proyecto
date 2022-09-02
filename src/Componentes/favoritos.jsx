@@ -1,4 +1,4 @@
 
-export const favoritos=()=>{
+export const Favoritos=({onFavoritos})=>{
     
 }

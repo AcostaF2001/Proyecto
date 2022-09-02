@@ -1,4 +1,9 @@
 import { Establecimiento } from "./Establecimiento"
-export const restaurantes =() =>{
+export const Restaurantes =({Restaurantes}) =>{
     
+    return(
+        <>
+        <Establecimiento onEstablecimiento={onEstablecimiento}/>
+        </>
+    )
 }

@@ -1,5 +1,20 @@
 import { Agregartarjeta } from "./Agregartarjeta"
-import { componenteayuda } from "./Componenteayuda"
-export const componenteMetodopago=()=>{
+import { AgregarDaviplata } from "./AgregarDaviplata"
+import { AgregarNequi } from "./AgregarNequi"
+import { Componenteayuda } from "./Componenteayuda"
+export const ComponenteMetodopago=({onComponenteMetodopago})=>{
 
+    return(
+        <>
+        <Agregartarjeta onAgregartarjeta={onAgregartarjeta}/>
+        <AgregarDaviplata onAgregarDaviplata={onAgregarDaviplata}/>
+        <AgregarNequi onAgregarNequi={onAgregarNequi}/>
+        <Componenteayuda onComponenteayuda={onComponenteayuda}/>
+
+        
+
+
+        
+        </>
+    )
 }

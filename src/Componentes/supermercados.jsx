@@ -1,4 +1,4 @@
 
-export const supermercados =() =>{
+export const Supermercados =({onSupermercados}) =>{
     
 }

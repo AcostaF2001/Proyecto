@@ -1,4 +1,4 @@
 
-export const componenteayuda=()=>{
+export const Componenteayuda=({onComponenteayuda})=>{
     
 }

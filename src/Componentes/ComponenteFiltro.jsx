@@ -1,4 +1,4 @@
 
-export const Filtro=() =>{
+export const Filtro=({onFiltro}) =>{
     
 }

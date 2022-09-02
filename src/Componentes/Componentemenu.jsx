@@ -1,7 +1,21 @@
-import { componenteMetodopago } from "./ComponenteMetodopago"
-import { componenteayuda } from "./Componenteayuda"
+import { ComponenteMetodopago } from "./ComponenteMetodopago"
+import { Componenteayuda } from "./Componenteayuda"
 import { Componentehistorial } from "./Componentehistorial"
 import { Componenteperfil } from "./Componenteperfil"
-export const componentemenu=() =>{
+
+export const Componentemenu=({onComponentemenu}) =>{
+
+    return(
+        <>
+        <ComponenteMetodopago onComponenteMetodopago={onComponenteMetodopago}/>
+        <Componenteayuda onComponenteayuda={onComponenteayuda}/>
+        <Componentehistorial onComponentehistorial={onComponentehistorial}/>
+        <Componenteperfil onComponenteperfil={onComponenteperfil}/>
+
+
+        
+
+        </>
+    )
 
 }

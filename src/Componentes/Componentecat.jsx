@@ -1,10 +1,26 @@
-import { favoritos } from "./favoritos"
+import { Favoritos } from "./favoritos"
 import { Farmacias } from "./Farmacias"
-import { restaurantes } from "./restaurantes"
-import { supermercados } from "./supermercados"
+import { Restaurantes } from "./restaurantes"
+import { Supermercados } from "./supermercados"
 import { Carrito } from "./Carrito"
 import { Filtro } from "./ComponenteFiltro"
 import { ComponentePromo } from "./ComponentePromo"
-export const Componentecat=() =>{
 
+export const Componentecat=({onComponentecat}) =>{
+
+    return(
+        <>
+
+        <Favoritos onFavoritos={onFavoritos}/>
+        <Farmacias onFarmacias={onFarmacias}/>
+        <Restaurantes onRestaurantes={onRestaurantes}/>
+        <Supermercados onSupermercados={onSupermercados}/>
+        <Carrito onCarrito={onCarrito}/>
+        <Filtro onFiltro={onFiltro}/>
+        <ComponentePromo onComponentePromo={onComponentePromo}/>
+
+
+        </>
+    )
+    
 }

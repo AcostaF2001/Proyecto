@@ -1,4 +1,4 @@
 import { useState } from "react"
-export const logingoogle=()=>{
+export const Logingoogle=()=>{
 
 }
