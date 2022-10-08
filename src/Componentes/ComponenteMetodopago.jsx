@@ -6,10 +6,10 @@ export const ComponenteMetodopago=({onComponenteMetodopago})=>{
 
     return(
         <>
-        <Agregartarjeta onAgregartarjeta={onAgregartarjeta}/>
-        <AgregarDaviplata onAgregarDaviplata={onAgregarDaviplata}/>
-        <AgregarNequi onAgregarNequi={onAgregarNequi}/>
-        <Componenteayuda onComponenteayuda={onComponenteayuda}/>
+        <Agregartarjeta onAgregartarjeta={Agregartarjeta}/>
+        <AgregarDaviplata onAgregarDaviplata={AgregarDaviplata}/>
+        <AgregarNequi onAgregarNequi={AgregarNequi}/>
+        <Componenteayuda onComponenteayuda={Componenteayuda}/>
 
         
 

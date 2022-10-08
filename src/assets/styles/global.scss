@@ -1,0 +1,44 @@
+@import "./variables.scss";
+
+body {
+    background: url('../images/Fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+
+.btn-primary {
+    background: #FFFFFF;
+    border-radius: 10px;
+    border-color: transparent;
+    color: $primary-color;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 80%;
+    position: relative;
+
+    &::before {
+        content: "";
+        background: linear-gradient(125.06deg, #0400FF -2.31%, #FF3D00 97.12%);
+        position: absolute;
+        height: 50px;
+        width: 100%;
+        z-index: -1;
+        left: 0;
+        filter: blur(13px);
+    }
+    
+    &:hover {
+        background: #aaaaaa;
+    }
+}
+
+.mb-6 {
+    margin-bottom: ($spacer * 4) !important;
+}
+
+.mt-6 {
+    margin-top: ($spacer * 4) !important;
+}

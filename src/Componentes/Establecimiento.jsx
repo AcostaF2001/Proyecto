@@ -3,7 +3,7 @@ export const Establecimiento =({onEstablecimiento}) =>{
     
     return(
         <>
-        <Carrito onCarrito={onCarrito}/>
+        <Carrito onCarrito={Carrito}/>
         </>
     )
 }

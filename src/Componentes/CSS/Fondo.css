@@ -1,0 +1,36 @@
+.fondo{
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    left: 0px;
+    top: 0px;
+
+    background: #E6D0F4;
+}
+
+.header{
+    
+    position: absolute;
+    width: 375px;
+    height: 361px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(90deg, #8A68A5 -2.67%, #C58ADE 70.3%);
+}
+
+.Sombra{
+    position: absolute;
+    width: 337px;
+    height: 100px;
+    left: 23px;
+    top: 112px;
+}
+
+.button_correo{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 12.14%;
+}

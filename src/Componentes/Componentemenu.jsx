@@ -7,10 +7,10 @@ export const Componentemenu=({onComponentemenu}) =>{
 
     return(
         <>
-        <ComponenteMetodopago onComponenteMetodopago={onComponenteMetodopago}/>
-        <Componenteayuda onComponenteayuda={onComponenteayuda}/>
-        <Componentehistorial onComponentehistorial={onComponentehistorial}/>
-        <Componenteperfil onComponenteperfil={onComponenteperfil}/>
+        <ComponenteMetodopago onComponenteMetodopago={ComponenteMetodopago}/>
+        <Componenteayuda onComponenteayuda={Componenteayuda}/>
+        <Componentehistorial onComponentehistorial={Componentehistorial}/>
+        <Componenteperfil onComponenteperfil={Componenteperfil}/>
 
 
         
