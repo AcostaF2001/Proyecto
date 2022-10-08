@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link,useNavigate } from "react-router-dom"
-import { UserAuth2 } from './Firebase/CorreoAuth';
+import { UserAuth2 } from '../Firebase/CorreoAuth';
 export const Logincorreo=() =>{
 
  

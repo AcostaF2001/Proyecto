@@ -5,14 +5,19 @@ export const Componentgps=({onComponentgps})=>{
 
     return(
         <>
-        <UbicacionActual onUbicacionActual={UbicacionActual}/>
-        <IngresarDireccion onIngresarDireccion={IngresarDireccion}/>
-        <ol>
+
+        <h1>Ingresa a la direccion que llegara tu pedido</h1>
         
-        ListaDirecciones.map(
-           
-        )
-        </ol>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Direccion</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                <div id="emailHelp" class="form-text">ingresa tu direccion</div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Agregar Direccion</button>
+        </form>
+        
 
         </>
     )

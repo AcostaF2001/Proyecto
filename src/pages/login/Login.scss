@@ -1,0 +1,21 @@
+.header {
+    margin-bottom: 200px;
+}
+
+.google-btn {
+    border-radius: 10px;
+}
+
+.help {
+    background: url('../../assets/images/Login/sms.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 10px 15px 15px 40px;
+
+    span {
+        font-size: 17px;
+        font-weight: 400;
+        color: #8A68A5;
+        line-height: 21px;
+    }
+}

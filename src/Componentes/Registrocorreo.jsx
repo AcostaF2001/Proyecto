@@ -1,4 +1,4 @@
-import { UserAuth2 } from './Firebase/CorreoAuth';
+import { UserAuth2 } from '../Firebase/CorreoAuth';
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react';
