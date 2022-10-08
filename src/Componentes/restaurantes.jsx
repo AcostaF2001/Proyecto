@@ -3,7 +3,7 @@ export const Restaurantes =({Restaurantes}) =>{
     
     return(
         <>
-        <Establecimiento onEstablecimiento={onEstablecimiento}/>
+        <Establecimiento onEstablecimiento={Establecimiento}/>
         </>
     )
 }

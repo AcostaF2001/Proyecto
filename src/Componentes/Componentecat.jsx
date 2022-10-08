@@ -11,13 +11,13 @@ export const Componentecat=({onComponentecat}) =>{
     return(
         <>
 
-        <Favoritos onFavoritos={onFavoritos}/>
-        <Farmacias onFarmacias={onFarmacias}/>
-        <Restaurantes onRestaurantes={onRestaurantes}/>
-        <Supermercados onSupermercados={onSupermercados}/>
-        <Carrito onCarrito={onCarrito}/>
-        <Filtro onFiltro={onFiltro}/>
-        <ComponentePromo onComponentePromo={onComponentePromo}/>
+        <Favoritos onFavoritos={Favoritos}/>
+        <Farmacias onFarmacias={Farmacias}/>
+        <Restaurantes onRestaurantes={Restaurantes}/>
+        <Supermercados onSupermercados={Supermercados}/>
+        <Carrito onCarrito={Carrito}/>
+        <Filtro onFiltro={Filtro}/>
+        <ComponentePromo onComponentePromo={ComponentePromo}/>
 
 
         </>

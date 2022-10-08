@@ -5,8 +5,8 @@ export const Componentgps=({onComponentgps})=>{
 
     return(
         <>
-        <UbicacionActual onUbicacionActual={onUbicacionActual}/>
-        <IngresarDireccion onIngresarDireccion={onIngresarDireccion}/>
+        <UbicacionActual onUbicacionActual={UbicacionActual}/>
+        <IngresarDireccion onIngresarDireccion={IngresarDireccion}/>
         <ol>
         
         ListaDirecciones.map(
