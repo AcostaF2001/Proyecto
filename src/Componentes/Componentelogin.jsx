@@ -7,6 +7,7 @@ import GoogleButton from "react-google-button"
 import { UserAuth } from "./Firebase/GoogleAuth"
 import { useNavigate } from "react-router-dom"
 import { useEffect } from "react"
+import "./CSS/Fondo.css"
 export const Componentlogin=()=>{
 
     const {googleSignIn,user} =UserAuth();
@@ -27,17 +28,29 @@ export const Componentlogin=()=>{
 
     return(
         <>
-         <div>
-            <img src={Logo} alt="" />
-         </div>
+        <div className="fondo">
+            <div className="header">
+                <div className="Sombra">
+                    <img src={Logo} alt="" />
+                </div>
 
-         <div>
-            <GoogleButton onClick={HandleGoogleSignIn}/>
-         </div>
+            </div>
 
-         <div>
-            <button className="btn btn-primary" onClick={RegistrarseCorreo}>Correo y Contraseña</button>
-         </div>
+                
+            <div className="d-grid gap-2 d-md-block">
+                <GoogleButton  onClick={HandleGoogleSignIn}/>
+                <button className="btn btn-primary"  onClick={RegistrarseCorreo}>Correo y Contraseña</button>
+
+            </div>
+            
+                
+
+                
+           
+
+           
+        </div>
+        
          
 
         </>
