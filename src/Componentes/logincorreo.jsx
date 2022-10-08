@@ -3,7 +3,9 @@ export const Logincorreo=() =>{
     
     return(
         <>
-            <h1>Goku</h1>
+
+            <h1>Inicio Sesion </h1>
+            <p>Ingrese su Correo</p>
         </>
     )
 }
