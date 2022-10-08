@@ -21,7 +21,7 @@ export const Componentlogin=()=>{
     }
 
     const RegistrarseCorreo=()=>{
-        navigate("./Registro")
+        navigate("./Login")
     }
 
 
