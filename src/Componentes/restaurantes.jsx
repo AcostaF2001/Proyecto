@@ -3,7 +3,8 @@ export const Restaurantes =({Restaurantes}) =>{
     
     return(
         <>
-        <Establecimiento onEstablecimiento={Establecimiento}/>
+        <h1>Goku le gana</h1>
+        
         </>
     )
 }
