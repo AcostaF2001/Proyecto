@@ -8,11 +8,7 @@ import { Componentebusqueda } from "./Componentebusqueda"
 export const Componenthome = () =>{
     return(
         <>
-        <Componentgps onComponentgps={Componentgps}/>
-        <Componentecat onComponentecat={Componentecat}/>
-        <Componentemenu onComponentemenu={Componentemenu}/>
-        <Componenteayuda onComponenteayuda={Componenteayuda}/>
-        <Componentebusqueda onComponentebusqueda={Componentebusqueda}/>
+            <h1>Goku</h1>
         </>
     )
 }

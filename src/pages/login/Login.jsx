@@ -18,7 +18,7 @@ export const Login=()=>{
     const HandleGoogleSignIn= async()=>{
         try{
             await googleSignIn();
-            navigate("./home")
+            navigate("./gps")
         }catch(error){
             console.log(error)
         }
