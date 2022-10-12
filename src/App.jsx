@@ -19,7 +19,8 @@ import { Componentgps } from "./Componentes/Componentegps";
                 <AuthContextProvider2>
                     <Routes>
                         <Route path="/" element={<Login/>}/>
-                        <Route path="/home" element={<Componentgps/>}/>
+                        <Route path="/home" element={<Componenthome/>}/>
+                        <Route path="/gps" element={<Componentgps/>}/>
                         <Route path="/Login" element={<Logincorreo/>}/>
                         <Route path="/Registro" element={<Registrocorreo/>}/>
                     </Routes>

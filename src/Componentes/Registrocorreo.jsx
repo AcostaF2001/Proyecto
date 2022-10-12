@@ -3,6 +3,7 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react';
 import { async } from '@firebase/util';
+import Logo from "../assets/images/logo.png"
 
 export const Registrocorreo=()=> {
 
@@ -19,7 +20,7 @@ export const Registrocorreo=()=> {
       setError('')
       try{
         await createUser2(email, password)
-        navigate('/home')
+        navigate('/gps')
 
       }catch(e){
         setError(e.message)
@@ -31,20 +32,30 @@ export const Registrocorreo=()=> {
 
   return(
     <>
-        <h1>Registro</h1>
-        <p>Ya tienes una cuenta? <Link to='/Login' className="underline">Inicia Sesion.</Link> </p>
-        <form onSubmit={Handlesubmit}>
+        <div >
+          <div className="header mt-6 ms-2 mx-auto">
+            <h1 className='fw-bold' style={{color: '#FFFFFF',fontSize: '50px' }}>Registrate</h1>
+          </div>
+
+        </div>
+
+
+        <form onSubmit={Handlesubmit} className="mt-5">
         <div className="mb-3">
-            <label for="exampleInputEmail1" className="form-label">Correo Electronico</label>
-            <input onChange={(e)=> setEmail(e.target.value)} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-            <div  id="emailHelp" className="form-text">Nunca compartas tu correo con otras personas</div>
+            <label for="exampleInputEmail1" style={{color: '#8A68A5'}} className="form-text ms-5 mt-5 ">Correo Electronico</label>
+            <input onChange={(e)=> setEmail(e.target.value)} type="email" className="form-control w-75 mx-auto mb-3"  id="exampleInputEmail1" aria-describedby="emailHelp"/>
+            <div  id="emailHelp" style={{color: '#8A68A5'}} className="form-text ms-5 ">Nunca compartas tu correo con otras personas</div>
         </div>
         <div className="mb-3">
-            <label for="exampleInputPassword1" className="form-label">Contraseña</label>
-            <input onChange={(e)=> setPassword(e.target.value)} type="password" className="form-control" id="exampleInputPassword1"/>
+            <label for="exampleInputPassword1" style={{color: '#8A68A5'}} className="form-text ms-5 ">Contraseña</label>
+            <input onChange={(e)=> setPassword(e.target.value)} type="password" className="form-control w-75 mx-auto mb-3"  id="exampleInputPassword1"/>
         </div>
-        <button type="submit" className="btn btn-primary">Confirmar</button>
+        <div className="d-grid gap-2 d-md-block mb-5">
+          <button type="submit" style={{color: '#8A68A5'}} className="btn btn-primary m-auto">Confirmar</button>
+        </div>
+        
         </form>
+        <p className="text-center  " style={{color: '#8A68A5'}}>Ya tienes una cuenta? <Link to='/Login' className="underline">Inicia Sesion.</Link> </p>
     </>
 )
 }
