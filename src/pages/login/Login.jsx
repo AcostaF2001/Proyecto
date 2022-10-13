@@ -32,7 +32,7 @@ export const Login=()=>{
     return(
         <>
         <div className="fondo d-flex flex-column justify-content-center">
-            <div className="header mt-6 mx-auto">
+            <div className="header mt-4 mx-auto">
                 <div className="Sombra">
                     <img src={Logo} alt="" />
                 </div>

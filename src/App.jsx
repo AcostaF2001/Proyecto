@@ -6,10 +6,12 @@ import { AuthContextProvider } from "./Firebase/GoogleAuth";
 import { AuthContextProvider2}  from "./Firebase/CorreoAuth";
 import { Logincorreo } from "./Componentes/logincorreo";
 import { Registrocorreo } from "./Componentes/Registrocorreo";
+import { Restaurantes } from "./Componentes/restaurantes";
 import './assets/styles/variables.scss'
 import './assets/styles/global.scss'
 
 import { Componentgps } from "./Componentes/Componentegps";
+import { Restaurante } from "./Componentes/Restaurante";
 
 
  const App=()=>{
@@ -23,6 +25,8 @@ import { Componentgps } from "./Componentes/Componentegps";
                         <Route path="/gps" element={<Componentgps/>}/>
                         <Route path="/Login" element={<Logincorreo/>}/>
                         <Route path="/Registro" element={<Registrocorreo/>}/>
+                        <Route path="/Restaurantes" element={<Restaurantes/>}/>
+                        <Route path="/Restaurante" element={<Restaurante/>}/>
                     </Routes>
                 </AuthContextProvider2> 
             </AuthContextProvider>
