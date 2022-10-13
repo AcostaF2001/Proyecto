@@ -16,6 +16,7 @@ import './assets/styles/variables.scss'
 import './assets/styles/global.scss'
 
 import { Componentgps } from "./Componentes/Componentegps";
+import { Restaurante } from "./Componentes/Restaurante";
 
 
  const App=()=>{
@@ -35,6 +36,7 @@ import { Componentgps } from "./Componentes/Componentegps";
                         <Route path="/Nequi" element={<AgregarNequi/>}/>
                         <Route path="/Daviplata" element={<AgregarDaviplata/>}/>
                         <Route path="/Ayuda" element={<Componenteayuda/>}/>
+                        <Route path="/Restaurante" element={<Restaurante/>}/>
                     </Routes>
                 </AuthContextProvider2> 
             </AuthContextProvider>
