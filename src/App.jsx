@@ -7,6 +7,11 @@ import { AuthContextProvider2}  from "./Firebase/CorreoAuth";
 import { Logincorreo } from "./Componentes/logincorreo";
 import { Registrocorreo } from "./Componentes/Registrocorreo";
 import { Restaurantes } from "./Componentes/restaurantes";
+import { ComponenteMetodopago } from "./Componentes/ComponenteMetodopago";
+import { AgregarDaviplata } from "./Componentes/AgregarDaviplata";
+import { AgregarNequi } from "./Componentes/AgregarNequi";
+import { Agregartarjeta } from "./Componentes/Agregartarjeta";
+import { Componenteayuda } from "./Componentes/Componenteayuda";
 import './assets/styles/variables.scss'
 import './assets/styles/global.scss'
 
@@ -26,6 +31,11 @@ import { Restaurante } from "./Componentes/Restaurante";
                         <Route path="/Login" element={<Logincorreo/>}/>
                         <Route path="/Registro" element={<Registrocorreo/>}/>
                         <Route path="/Restaurantes" element={<Restaurantes/>}/>
+                        <Route path="/MetodoPago" element={<ComponenteMetodopago/>}/>
+                        <Route path="/AgregarTarjeta" element={<Agregartarjeta/>}/>
+                        <Route path="/Nequi" element={<AgregarNequi/>}/>
+                        <Route path="/Daviplata" element={<AgregarDaviplata/>}/>
+                        <Route path="/Ayuda" element={<Componenteayuda/>}/>
                         <Route path="/Restaurante" element={<Restaurante/>}/>
                     </Routes>
                 </AuthContextProvider2> 

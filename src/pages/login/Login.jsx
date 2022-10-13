@@ -27,6 +27,9 @@ export const Login=()=>{
     const RegistrarseCorreo=()=>{
         navigate("./Login")
     }
+    const help=()=>{
+        navigate("/Ayuda")
+    }
 
 
     return(
@@ -62,7 +65,7 @@ export const Login=()=>{
                 </button>
             </div>
 
-            <div className="row">
+            <div className="row" onClick={help} >
                 <div className="col-2">
                     <img src={Helper} alt="" />
                 </div>
