@@ -22,6 +22,9 @@ export const Componenthome = () =>{
     const restaurantes =()=>{
         navigate("/Restaurantes")
     }
+    const help=()=>{
+        navigate("/Ayuda")
+    }
     
     return(
         <>
@@ -45,9 +48,9 @@ export const Componenthome = () =>{
                     <img src={menuTabs} alt="" className="ms-5 w-1 pt-3"/>
                 </div>
             </div>
-            <div class="input-group input-group-sm mb-3  ">
-                <span class="input-group-text" id="inputGroup-sizing-sm"><img src={lupa} alt="" className="w-75" /></span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"/>
+            <div className="input-group input-group-sm mb-3  ">
+                <span className="input-group-text" id="inputGroup-sizing-sm"><img src={lupa} alt="" className="w-75" /></span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" style={{color:'#8A68A5', fontSize: '18px' }} placeholder="¿Qué quieres pedir hoy?"/>
             </div>
         </div>
         <div >
@@ -68,7 +71,7 @@ export const Componenthome = () =>{
                 </div>
             </div>
         </div>
-        <div className="row mt-5">
+        <div className="row mt-5" onClick={help}>
                 <div className="col-2">
                     <img src={Helper} alt="" />
                 </div>
