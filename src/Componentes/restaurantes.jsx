@@ -26,8 +26,8 @@ export const Restaurantes =({Restaurantes}) =>{
         navigate("/home")
     }
     return(
-        <>
-            <div className="mt-5">
+        <div class='bg-1 py-5 px-2'>
+            <div>
                 <div className="row">
                     <div className="col-8">
                         <div className="d-flex p-2 mt-3 ">
@@ -93,6 +93,6 @@ export const Restaurantes =({Restaurantes}) =>{
 
         </div>
     
-        </>
+        </div>
     )
 }

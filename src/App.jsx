@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Componenthome } from "./Componentes/Componentehome";
+import { Home } from "./Componentes/home/Home";
 import { Login } from "./pages/login/Login";
 import { AuthContextProvider } from "./Firebase/GoogleAuth";
 import { AuthContextProvider2}  from "./Firebase/CorreoAuth";
@@ -26,7 +26,7 @@ import { Restaurante } from "./Componentes/Restaurante";
                 <AuthContextProvider2>
                     <Routes>
                         <Route path="/" element={<Login/>}/>
-                        <Route path="/home" element={<Componenthome/>}/>
+                        <Route path="/home" element={<Home/>}/>
                         <Route path="/gps" element={<Componentgps/>}/>
                         <Route path="/Login" element={<Logincorreo/>}/>
                         <Route path="/Registro" element={<Registrocorreo/>}/>

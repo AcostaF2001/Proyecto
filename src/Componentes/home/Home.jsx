@@ -1,24 +1,36 @@
 import { useState } from "react"
-import { Componentgps } from "./Componentegps"
-import { Componentecat } from "./Componentecat"
-import { Componentemenu } from "./Componentemenu"
-import { Componenteayuda } from "./Componenteayuda"
-import { Componentebusqueda } from "./Componentebusqueda"
-import user from "../assets/images/usuario.png"
-import menuTabs from "../assets/images/Menú.png"
-import ubic from "../assets/images/ubicacion.png"
-import lupa from "../assets/images/lupa.png"
-import rest from "../assets/images/Home/Restaurantes.png"
-import far from "../assets/images/Home/Farmacias.png"
-import fav from "../assets/images/Home/Favoritos.png"
-import sup from "../assets/images/Home/supermercados.png" 
-import Helper from "../assets/images/Login/helper.png"
-import  "../assets/styles/global.scss"
+import { Componentgps } from "../Componentegps"
+import { Componentecat } from "../Componentecat"
+import { Componentemenu } from "../Componentemenu"
+import { Componenteayuda } from "../Componenteayuda"
+import { Componentebusqueda } from "../Componentebusqueda"
+import user from "assets/images/usuario.png"
+import menuTabs from "assets/images/Menú.png"
+import ubic from "assets/images/ubicacion.png"
+import lupa from "assets/images/lupa.png"
+import rest from "assets/images/Home/Restaurantes.png"
+import far from "assets/images/Home/Farmacias.png"
+import fav from "assets/images/Home/Favoritos.png"
+import sup from "assets/images/Home/supermercados.png" 
+import Helper from "assets/images/Login/helper.png"
+import  "assets/styles/global.scss"
 import { useNavigate } from "react-router-dom"
+import { Menu } from "./Menu"
+import "./Home.scss"
 
-export const Componenthome = () =>{
+export const Home = () =>{
+
+    const [showMenu, setShowMenu] = useState(false);
+    const [toggleMenu, setToggleMenu] = useState(false);
+
+    const handleToggleMenu = () => {
+        setToggleMenu( false )
+        setTimeout( () => {
+            setShowMenu(false)
+        }, 1000)
+    }
+
     const navigate = useNavigate();
-
 
     const restaurantes =()=>{
         navigate("/Restaurantes")
@@ -28,8 +40,16 @@ export const Componenthome = () =>{
     }
     
     return(
-        <>
-        <div className="header-home mt-5  ">
+        <div className="bg-1 py-5 px-2">
+        { 
+            showMenu && 
+            <>
+                <Menu toggleMenu={toggleMenu} />
+                <div className="overlay" onClick={() => handleToggleMenu()}></div>
+            </>
+        }
+        
+        <div className="header-home">
             <div className="row">
                 <div className="col-2 justify-content-center">
                     <img src={user} alt="" className="ms-1 w-90 "/>
@@ -46,17 +66,12 @@ export const Componenthome = () =>{
                     </div>
                 </div>
                 <div className="col">
-                    <img src={menuTabs} alt="" className="ms-5 w-1 pt-3"/>
+                    <img onClick={() => { setShowMenu(true); setToggleMenu(true) } } src={menuTabs} alt="" className="ms-5 w-1 pt-3"/>
                 </div>
             </div>
-            <div className="input-group input-group-sm mb-3  ">
-                <span className="input-group-text" id="inputGroup-sizing-sm"><img src={lupa} alt="" className="w-75" /></span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" style={{color:'#8A68A5', fontSize: '18px' }} placeholder="¿Qué quieres pedir hoy?"/>
-            <div class="input-group input-group-sm mb-3  ">
-                <span class="input-group-text" id="inputGroup-sizing-sm"><img src={lupa} alt="" className="w-75" /></span>
-                <input type="text" className="form-control" aria-label="Sizing example input" placeholder="Que quieres pedir hoy?" aria-describedby="inputGroup-sizing-sm"/>
+            <div className="input-group input-group-sm mb-3 px-3  ">
+                <input type="text" class="form-control input-search" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" style={{color:'#8A68A5', fontSize: '18px' }} placeholder="¿Qué quieres pedir hoy?"/>            
             </div>
-        </div>
         <div >
             <div className="row">
                 <div className="col-5">
@@ -88,6 +103,6 @@ export const Componenthome = () =>{
                 </div>
             </div>
             </div>
-        </>
+        </div>
     )
 }

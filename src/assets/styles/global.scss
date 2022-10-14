@@ -2,13 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300;400;700&display=swap');
 
-body {
-    background: url('../images/Fondo2.png');
+.bg-1, .bg-2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     background-attachment: fixed;
-    font-family: 'Inter', sans-serif;
+}
+.bg-1 {
+    background-image: url('../images/Fondo2.png');
+}
+
+.bg-2 {
+    background-image: url('../images/Fondo3.png');
 }
 
 .btn-primary {
