@@ -24,7 +24,7 @@ export const Componentgps=({onComponentgps})=>{
         
         <form>
             <div className="mb-3">
-                <label for="exampleInputEmail1" style={{color: '#8A68A5'}} className="form-text ms-5  ">Direccion</label>
+                <label htmlFor="exampleInputEmail1" style={{color: '#8A68A5'}} className="form-text ms-5  ">Direccion</label>
                 <input type="email" className="form-control w-75 mx-auto mb-3" id="exampleInputEmail1" aria-describedby="emailHelp"/>
             </div>
 

@@ -70,7 +70,7 @@ export const Home = () =>{
                 </div>
             </div>
             <div className="input-group input-group-sm mb-3 px-3  ">
-                <input type="text" class="form-control input-search" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" style={{color:'#8A68A5', fontSize: '18px' }} placeholder="¿Qué quieres pedir hoy?"/>            
+                <input type="text" className="form-control input-search" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" style={{color:'#8A68A5', fontSize: '18px' }} placeholder="¿Qué quieres pedir hoy?"/>            
             </div>
         <div >
             <div className="row">
