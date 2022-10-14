@@ -33,7 +33,7 @@ export const Login=()=>{
 
 
     return(
-        <>
+        <div className="bg-3 px-2 pb-6">
         <div className="fondo d-flex flex-column justify-content-center">
             <div className="header mt-4 mx-auto">
                 <div className="Sombra">
@@ -88,7 +88,7 @@ export const Login=()=>{
         
          
 
-        </>
+        </div>
     )
 
 }

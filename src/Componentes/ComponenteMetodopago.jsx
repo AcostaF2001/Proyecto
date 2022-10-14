@@ -27,8 +27,8 @@ export const ComponenteMetodopago=()=>{
 
     return(
         
-        <>
-        <div className="header mt-5 ms-2 mx-auto">
+        <div className="bg-1 px-2 pb-6 pt-2">
+        <div className="header2 mt-2 ms-2 mx-auto">
             <h1 className='fw-bold' style={{color: '#FFFFFF',fontSize: '35px' }}>
                 Agregar método de pago
             </h1>
@@ -63,6 +63,6 @@ export const ComponenteMetodopago=()=>{
 
 
         
-        </>
+        </div>
     )
 }

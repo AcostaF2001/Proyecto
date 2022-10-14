@@ -17,7 +17,7 @@ export const Restaurante =()=>{
 
     return(
         <div className="bg-2 py-5 px-2" >
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-3 mt-4">
                 <span class="input-group-text" id="inputGroup-sizing-sm"><img src={lupa} alt="" className="w-75" /></span>
                 <input type="text" className="form-control" aria-label="Sizing example input" placeholder="Que quieres pedir hoy?" aria-describedby="inputGroup-sizing-sm"/>
             </div>

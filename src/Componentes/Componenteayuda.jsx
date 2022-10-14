@@ -14,8 +14,8 @@ export const Componenteayuda = () => {
     }
 
     return (
-        <>
-        <div className="header mt-6 ms-2 mx-auto">
+        <div className="bg-1 px-2 pb-6 pt-2">
+        <div className="header2 mt-5 ms-2 mx-auto">
             <h1 className='fw-bold' style={{color: '#FFFFFF',fontSize: '35px' }}>
                 Contáctate con nosotros
             </h1>
@@ -25,7 +25,7 @@ export const Componenteayuda = () => {
         </div>
         <div>
             <img src={chat} alt=""  style={{  marginTop:'-10px', marginLeft:'20px',  width:'90%' }}/>
-            <div className='col-8 ms-4 mt-n2 position-relative'>
+            <div className='col-8 ms-4 mt-n3 position-relative'>
             <input class="form-control form-control-lg" type="text" placeholder="Escribe tu mensaje"
              aria-label=".form-control-lg example"  />
             </div>
@@ -33,7 +33,7 @@ export const Componenteayuda = () => {
         <div className=" mt-4 ">
             <img src={volver} alt="" onClick={back} style={{ marginLeft:'160px' }}/>
         </div>
-        </>
+        </div>
     );
 }
 

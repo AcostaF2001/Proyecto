@@ -25,7 +25,7 @@ export const Logincorreo=() =>{
     }
 
     return(
-        <>
+        <div className="bg-3 px-2 pb-6">
             <div className="fondo d-flex flex-column justify-content-center">
                 <div className="header mt-6 mx-auto">
                 <img src={Logo} alt="" />
@@ -37,7 +37,7 @@ export const Logincorreo=() =>{
             </div>
             
             <form onSubmit={handlesubmit}>
-            <div >   
+            <div className="mt-5">   
 
                 <div className="mb-3">
                     <label for="exampleInputEmail1" style={{color: '#8A68A5'}} className="form-label ms-5 ">Correo Electronico</label>
@@ -57,6 +57,6 @@ export const Logincorreo=() =>{
             </div>
             <p className="text-center  " style={{color: '#8A68A5'}}>No tienes Cuenta Aun? <Link to='/Registro' className="underline">Registrate.</Link> </p>
             </form>
-        </>
+        </div>
     )
 }

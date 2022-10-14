@@ -13,8 +13,8 @@ export const AgregarNequi = () => {
     }
 
     return (
-        <>
-        <div className="header mt-6 ms-2 mx-auto">
+        <div className="bg-1 px-2 pb-6 pt-2">
+        <div className="header2 mt-5 ms-2 mx-auto">
             <h1 className='fw-bold' style={{color: '#FFFFFF',fontSize: '35px' }}>
                 Vincular Nequi
             </h1>
@@ -67,7 +67,7 @@ export const AgregarNequi = () => {
         <div >
             <img src={volver} alt="" onClick={back} style={{ marginLeft:'160px', marginTop:'-10px' }}/>
         </div>
-        </>
+        </div>
     );
 }
 

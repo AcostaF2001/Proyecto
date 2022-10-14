@@ -31,9 +31,9 @@ export const Registrocorreo=()=> {
     }
 
   return(
-    <>
+    <div className="bg-3 px-2 pb-6 pt-3">
         <div >
-          <div className="header mt-6 ms-2 mx-auto">
+          <div className="header  ms-3 mx-auto">
             <h1 className='fw-bold' style={{color: '#FFFFFF',fontSize: '50px' }}>Registrate</h1>
           </div>
 
@@ -56,6 +56,6 @@ export const Registrocorreo=()=> {
         
         </form>
         <p className="text-center  " style={{color: '#8A68A5'}}>Ya tienes una cuenta? <Link to='/Login' className="underline">Inicia Sesion.</Link> </p>
-    </>
+    </div>
 )
 }

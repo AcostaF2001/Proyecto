@@ -14,9 +14,9 @@ export const Componentgps=({onComponentgps})=>{
     }
 
     return(
-        <>
+        <div className="bg-1 px-2 pb-6 pt-2">
 
-        <div className="header mt-4 ms-2 mx-auto">
+        <div className="header2 ms-2 mt-5 mx-auto">
             <h1 className='fw-bold' style={{color: '#FFFFFF',fontSize: '35px' }}>Ingresa a la direccion que llegara tu pedido</h1>
         </div>
 
@@ -37,7 +37,7 @@ export const Componentgps=({onComponentgps})=>{
         </form>
         
 
-        </>
+        </div>
     )
     
 }

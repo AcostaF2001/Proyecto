@@ -38,14 +38,13 @@ export const Restaurantes =({Restaurantes}) =>{
                     <div className="col">
                         <img src={carrito} alt="" className="ms-3 w-75 pt-2"/>
                     </div>
-                    <div class="input-group input-group-sm mb-3 mt-3 ">
-                        <span class="input-group-text" id="inputGroup-sizing-sm"><img src={lupa} alt="" className="w-75" /></span>
-                    <input type="text" className="form-control" aria-label="Sizing example input" placeholder="Que quieres pedir hoy?" aria-describedby="inputGroup-sizing-sm"/>
+                    <div class="input-group input-group-sm  mt-3 ">
+                        <input type="text" class="form-control input-search" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" style={{color:'#8A68A5', fontSize: '18px' }} placeholder="¿Qué quieres pedir hoy?"/>           
                     </div>
                 </div>
             </div>
 
-            <div  className="d-flex p-2 mt-3 ">
+            <div  className="d-flex p-2 mt-n4 ">
                 <img src={Ajus} alt="" />
                 <h1 className='fw-regular ' style={{color: '#8A68A5',fontSize: '18px', marginLeft:'-8px',marginTop:'35px', }}>Ajustes de Busqueda</h1>
             </div>

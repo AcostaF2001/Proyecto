@@ -12,6 +12,7 @@ import { AgregarDaviplata } from "./Componentes/AgregarDaviplata";
 import { AgregarNequi } from "./Componentes/AgregarNequi";
 import { Agregartarjeta } from "./Componentes/Agregartarjeta";
 import { Componenteayuda } from "./Componentes/Componenteayuda";
+import { Componentehistorial } from "Componentes/Componentehistorial";
 import './assets/styles/variables.scss'
 import './assets/styles/global.scss'
 
@@ -37,6 +38,7 @@ import { Restaurante } from "./Componentes/Restaurante";
                         <Route path="/Daviplata" element={<AgregarDaviplata/>}/>
                         <Route path="/Ayuda" element={<Componenteayuda/>}/>
                         <Route path="/Restaurante" element={<Restaurante/>}/>
+                        <Route path="/Historial" element={<Componentehistorial/>}/>
                     </Routes>
                 </AuthContextProvider2> 
             </AuthContextProvider>
