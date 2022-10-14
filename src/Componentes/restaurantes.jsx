@@ -44,7 +44,7 @@ export const Restaurantes =({Restaurantes}) =>{
                 </div>
             </div>
 
-            <div  className="d-flex p-2 mt-n4 ">
+            <div  className="d-flex p-2 mt-n4  ">
                 <img src={Ajus} alt="" />
                 <h1 className='fw-regular ' style={{color: '#8A68A5',fontSize: '18px', marginLeft:'-8px',marginTop:'35px', }}>Ajustes de Busqueda</h1>
             </div>
