@@ -40,7 +40,7 @@ export const Home = () =>{
     }
     
     return(
-        <div className="bg-1 py-5 px-2">
+        <div className="bg-3 py-5 px-2">
         { 
             showMenu && 
             <>
@@ -49,7 +49,7 @@ export const Home = () =>{
             </>
         }
         
-        <div className="header-home">
+        <div className="header-home mt-4">
             <div className="row">
                 <div className="col-2 justify-content-center">
                     <img src={user} alt="" className="ms-1 w-90 "/>

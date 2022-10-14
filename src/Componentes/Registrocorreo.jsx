@@ -31,7 +31,7 @@ export const Registrocorreo=()=> {
     }
 
   return(
-    <div className="bg-3 px-2 pb-6 pt-3">
+    <div className="bg-3 px-2 pb-7 pt-3">
         <div >
           <div className="header  ms-3 mx-auto">
             <h1 className='fw-bold' style={{color: '#FFFFFF',fontSize: '50px' }}>Registrate</h1>

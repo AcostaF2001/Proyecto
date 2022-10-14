@@ -25,7 +25,7 @@ export const Logincorreo=() =>{
     }
 
     return(
-        <div className="bg-3 px-2 pb-6">
+        <div className="bg-3 px-2 pb-7">
             <div className="fondo d-flex flex-column justify-content-center">
                 <div className="header mt-6 mx-auto">
                 <img src={Logo} alt="" />
