@@ -40,12 +40,12 @@ export const Logincorreo=() =>{
             <div className="mt-5">   
 
                 <div className="mb-3">
-                    <label for="exampleInputEmail1" style={{color: '#8A68A5'}} className="form-label ms-5 ">Correo Electronico</label>
+                    <label htmlFor="exampleInputEmail1" style={{color: '#8A68A5'}} className="form-label ms-5 ">Correo Electronico</label>
                     <input onChange={(e)=> setEmail(e.target.value)} type="email" className="form-control w-75 mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                     <div id="emailHelp" style={{color: '#8A68A5'}} className="form-text ms-5 ">Nunca compartas tu correo con otras personas</div>
                 </div>
                 <div className="mb-3" >
-                    <label for="exampleInputPassword1" style={{color: '#8A68A5'}} className="form-label text-center ms-5 ">Contraseña</label>
+                    <label htmlFor="exampleInputPassword1" style={{color: '#8A68A5'}} className="form-label text-center ms-5 ">Contraseña</label>
                     <input onChange={(e)=> setPassword(e.target.value)} type="password" className="form-control w-75 mx-auto mb-3" id="exampleInputPassword1"/>
                 </div>
 

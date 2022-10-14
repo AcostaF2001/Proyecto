@@ -6,6 +6,9 @@ import Pago from 'assets/images/Pago.png'
 import Help from 'assets/images/Help.png'
 import Cerrar from 'assets/images/Cerrar.png'
 import { useNavigate } from 'react-router-dom'
+import { UserAuth2 } from '../../Firebase/CorreoAuth'
+import { UserAuth } from '../../Firebase/GoogleAuth'
+import { async } from '@firebase/util'
 
 export const Menu = ({toggleMenu}) => {
 
@@ -21,6 +24,20 @@ export const Menu = ({toggleMenu}) => {
   const help=()=>{
     navigate("/Ayuda")
   }
+  const cerrarSesion=()=>{
+    navigate("/Login")
+  }
+  const {user, logOut} = UserAuth()
+
+  const handleSignOut = async() => {
+    try {
+      await logOut()
+    } catch (error) {
+      console.log(error)
+    }
+
+  }
+
   return (
     <div className={`menu-home animate__animated ${toggleMenu ? 'animate__slideInRight': 'animate__slideOutRight' } `}>
         <ul className='menu-list'>
@@ -36,7 +53,7 @@ export const Menu = ({toggleMenu}) => {
             <li className='menu-item d-flex align-items-start'>
                 <img src={Help} className='mb-3' onClick={help}/> <span className='ms-3 mt-3' onClick={help}> Centro de ayuda </span>
             </li>
-            <li className='menu-item d-flex align-items-start'>
+            <li className='menu-item d-flex align-items-start' onClick={() => { handleSignOut(); cerrarSesion() } }>
                 <img src={Cerrar} className='mb-3' /> <span className='ms-3 mt-3'> Cerrar sesión </span>
             </li>
         </ul>

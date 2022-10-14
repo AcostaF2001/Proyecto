@@ -12,9 +12,12 @@ export const AuthContextProvider2=({children})=>{
     const signIn = (email,password) =>{
         return signInWithEmailAndPassword(auth,email,password)
     };
+    const logOut =()=>{
+        signOut(auth)
+    }
 
     return(
-        <UserContext2.Provider value={{createUser2, signIn }} >
+        <UserContext2.Provider value={{createUser2, signIn, logOut }} >
              {children}
         </UserContext2.Provider>
     )
