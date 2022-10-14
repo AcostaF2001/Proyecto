@@ -14,9 +14,22 @@ import promo from "../assets/images/Restaurantes/Promociones.png"
 import volver from "../assets/images/volver.png"
 import lupa from "../assets/images/lupa.png"
 import { useNavigate } from "react-router-dom"
+import { useState } from "react"
+import { Carrito } from "./Carrito"
+import  "assets/styles/global.scss"
 export const Restaurantes =({Restaurantes}) =>{
 
     const navigate = useNavigate();
+
+    const [showCarrito, setShowCarrito] = useState(false);
+    const [toggleCarrito, setToggleCarrito] = useState(false);
+
+    const handleToggleCarrito = () => {
+        setToggleCarrito( false )
+        setTimeout( () => {
+            setShowCarrito(false)
+        }, 1000)
+    }
 
     const restaurante=()=>{
         navigate("/Restaurante")
@@ -26,7 +39,14 @@ export const Restaurantes =({Restaurantes}) =>{
         navigate("/home")
     }
     return(
-        <div class='bg-1 py-5 px-2'>
+        <div className='bg-1 py-5 px-2'>
+            { 
+            showCarrito && 
+            <>
+                <Carrito toggleCarrito={toggleCarrito} />
+                <div className="overlay" onClick={() => handleToggleCarrito()}></div>
+            </>
+        }
             <div>
                 <div className="row">
                     <div className="col-8">
@@ -36,10 +56,10 @@ export const Restaurantes =({Restaurantes}) =>{
                         </div>
                     </div>
                     <div className="col">
-                        <img src={carrito} alt="" className="ms-3 w-75 pt-2"/>
+                        <img onClick={() => { setShowCarrito(true); setToggleCarrito(true) } } src={carrito} alt="" className="ms-3 w-75 pt-2"/>
                     </div>
-                    <div class="input-group input-group-sm  mt-3 ">
-                        <input type="text" class="form-control input-search" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" style={{color:'#8A68A5', fontSize: '18px' }} placeholder="¿Qué quieres pedir hoy?"/>           
+                    <div className="input-group input-group-sm  mt-3 ">
+                        <input type="text" className="form-control input-search" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" style={{color:'#8A68A5', fontSize: '18px' }} placeholder="¿Qué quieres pedir hoy?"/>           
                     </div>
                 </div>
             </div>

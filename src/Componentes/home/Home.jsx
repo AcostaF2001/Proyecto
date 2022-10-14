@@ -40,7 +40,7 @@ export const Home = () =>{
     }
     
     return(
-        <div className="bg-3 py-5 px-2">
+        <div className="bg-4 py-5 px-2">
         { 
             showMenu && 
             <>
@@ -51,10 +51,10 @@ export const Home = () =>{
         
         <div className="header-home mt-4">
             <div className="row">
-                <div className="col-2 justify-content-center">
+                <div className="col-2 justify-content-center mt-3 ms-3">
                     <img src={user} alt="" className="ms-1 w-90 "/>
                 </div>
-                <div className="col-6">
+                <div className="col-6 ">
                     <div className="d-inline-flex p-2 pt-3  ">
                         <h1 className='fw-regular' style={{color: '#FFFFFF',fontSize: '17px', marginLeft:'10px' }}>¡Bienvenida!</h1>
                         

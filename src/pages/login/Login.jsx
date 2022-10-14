@@ -42,7 +42,7 @@ export const Login=()=>{
 
             </div>
 
-            <div className="d-grid gap-2 d-md-block mb-6">
+            <div className="d-grid gap-2 d-md-block mb-6 mt-6">
                 <GoogleButton 
                     type="light"
                     label='Inicia con Google'

@@ -26,7 +26,7 @@ export const Componenteayuda = () => {
         <div>
             <img src={chat} alt=""  style={{  marginTop:'-10px', marginLeft:'20px',  width:'90%' }}/>
             <div className='col-8 ms-4 mt-n3 position-relative'>
-            <input class="form-control form-control-lg" type="text" placeholder="Escribe tu mensaje"
+            <input className="form-control form-control-lg" type="text" placeholder="Escribe tu mensaje"
              aria-label=".form-control-lg example"  />
             </div>
         </div>

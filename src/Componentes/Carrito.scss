@@ -1,0 +1,20 @@
+@import '../assets/styles/variables.scss';
+
+.carrito {
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    width: 386px;
+    bottom: 0;
+    background-color: #E6D0F4;
+    z-index: 9999;
+
+    .line {
+        height: 2px;
+        background-color: $primary-color;
+    }
+    .bottom{
+        height: 121px;
+        background-color: #B192CB;
+    }
+}
