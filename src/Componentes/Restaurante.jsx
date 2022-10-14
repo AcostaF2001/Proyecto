@@ -4,10 +4,16 @@ import logo from "../assets/images/Restaurante/Logo.png"
 import combo from "../assets/images/Restaurante/Combo.png"
 import Poke from "../assets/images/Restaurante/Poke.png"
 import Menu from "../assets/images/Restaurante/Menu.png"
-import volver from "../assets/images/Volver.png"
+import volver from "../assets/images/volver.png"
 import Fav from "../assets/images/Restaurante/fav.png"
 import car from "../assets/images/Restaurante/Car.png"
+import { useNavigate } from "react-router-dom"
 export const Restaurante =()=>{
+    const navigate = useNavigate();
+
+    const back=()=>{
+        navigate("/Restaurantes")
+    }
 
     return(
         <>
@@ -46,7 +52,7 @@ export const Restaurante =()=>{
                 <img src={Menu} alt="" className="ms-5" />
             </div>
             <div className="d-flex p-2 mt-n2 ">
-                <img src={volver} alt="" className="ms-4 mt-3 " style={{width:'15%',height:'15%'}}/>                
+                <img src={volver} alt="" className="ms-4 mt-3 " onClick={back} style={{width:'15%',height:'15%'}}/>                
                 <img src={Fav} alt="" className="ms-1 w-75" />
             </div>
 

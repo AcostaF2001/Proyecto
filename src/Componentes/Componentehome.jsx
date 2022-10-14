@@ -13,6 +13,7 @@ import far from "../assets/images/Home/Farmacias.png"
 import fav from "../assets/images/Home/Favoritos.png"
 import sup from "../assets/images/Home/supermercados.png" 
 import Helper from "../assets/images/Login/helper.png"
+import  "../assets/styles/global.scss"
 import { useNavigate } from "react-router-dom"
 
 export const Componenthome = () =>{
@@ -85,6 +86,7 @@ export const Componenthome = () =>{
                         </span>
                     </div>
                 </div>
+            </div>
             </div>
         </>
     )

@@ -11,7 +11,7 @@ import frisby from "../assets/images/Restaurantes/frisby.png"
 import Wok from "../assets/images/Restaurantes/Sr.wok.png"
 import btn from "../assets/images/Restaurantes/Botonees.png"
 import promo from "../assets/images/Restaurantes/Promociones.png"
-import volver from "../assets/images/Volver.png"
+import volver from "../assets/images/volver.png"
 import lupa from "../assets/images/lupa.png"
 import { useNavigate } from "react-router-dom"
 export const Restaurantes =({Restaurantes}) =>{
