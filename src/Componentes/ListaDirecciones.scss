@@ -1,0 +1,33 @@
+@import '../assets/styles/variables.scss';
+
+.direcciones{
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    width: 390px;
+    bottom: 0;
+    background-color: #E6D0F4;
+    z-index: 9999;
+    .line {
+        height: 2px;
+        background-color: $primary-color;
+    }
+    .dir-list{
+        padding: 0 0 0 0;
+        list-style: none;
+        .dir-item {
+            height: 100px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-y: center;
+            background-position-x: center;
+            
+            background-image: url('../assets/images/direcciones/container.png');
+            .form-check-input{
+                background-color: $primary-color;
+                width: 10%;
+                height: 40%;
+            }
+        }
+    }
+}

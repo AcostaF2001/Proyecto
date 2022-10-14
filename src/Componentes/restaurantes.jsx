@@ -17,6 +17,7 @@ import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import { Carrito } from "./Carrito"
 import  "assets/styles/global.scss"
+import ListaDirecciones from "Componentes/ListaDirecciones"
 export const Restaurantes =({Restaurantes}) =>{
 
     const navigate = useNavigate();
@@ -28,6 +29,16 @@ export const Restaurantes =({Restaurantes}) =>{
         setToggleCarrito( false )
         setTimeout( () => {
             setShowCarrito(false)
+        }, 1000)
+    }
+
+    const [showDir, setShowDir] = useState(false);
+    const [toggleDir, setToggleDir] = useState(false);
+
+    const handleToggleDir = () => {
+        setToggleDir( false )
+        setTimeout( () => {
+            setShowDir(false)
         }, 1000)
     }
 
@@ -47,10 +58,17 @@ export const Restaurantes =({Restaurantes}) =>{
                 <div className="overlay" onClick={() => handleToggleCarrito()}></div>
             </>
         }
+        { 
+            showDir && 
+            <>
+                <ListaDirecciones toggleDir={toggleDir} />
+                <div className="overlay" onClick={() => handleToggleDir()}></div>
+            </>
+        }
             <div>
                 <div className="row">
                     <div className="col-8">
-                        <div className="d-flex p-2 mt-3 ">
+                        <div className="d-flex p-2 mt-3 " onClick={() => { setShowDir(true); setToggleDir(true) } }>
                             <img src={ubic} alt="" className="ms-1" style={{width:'12%', height:'12%',marginTop:'1px' }}/>                
                             <h1 className='fw-regular' style={{color: '#FFFFFF',fontSize: '20px', marginLeft:'2px' }}>Carrera 44 #6b-95</h1>
                         </div>

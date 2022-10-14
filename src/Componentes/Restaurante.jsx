@@ -8,22 +8,42 @@ import volver from "../assets/images/volver.png"
 import Fav from "../assets/images/Restaurante/fav.png"
 import car from "../assets/images/Restaurante/Car.png"
 import { useNavigate } from "react-router-dom"
+import { useState } from "react"
+import { Carrito } from "./Carrito"
 export const Restaurante =()=>{
     const navigate = useNavigate();
 
     const back=()=>{
         navigate("/Restaurantes")
     }
+    const [showCarrito, setShowCarrito] = useState(false);
+    const [toggleCarrito, setToggleCarrito] = useState(false);
+
+    const handleToggleCarrito = () => {
+        setToggleCarrito( false )
+        setTimeout( () => {
+            setShowCarrito(false)
+        }, 1000)
+    }
 
     return(
         <div className="bg-2 py-5 px-2" >
-            <div class="input-group input-group-sm mb-3 mt-4">
-                <span class="input-group-text" id="inputGroup-sizing-sm"><img src={lupa} alt="" className="w-75" /></span>
-                <input type="text" className="form-control" aria-label="Sizing example input" placeholder="Que quieres pedir hoy?" aria-describedby="inputGroup-sizing-sm"/>
+            { 
+            showCarrito && 
+            <>
+                <Carrito toggleCarrito={toggleCarrito} />
+                <div className="overlay" onClick={() => handleToggleCarrito()}></div>
+            </>
+            }
+            <div className="input-group input-group-sm  mt-2">
+                <div className="input-group input-group-sm  mt-1 ">
+                        <input type="text" className="form-control input-search" 
+                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" style={{color:'#8A68A5', fontSize: '18px' }} placeholder="¿Qué quieres pedir hoy?"/>           
+                </div>
             </div>
 
             <div>
-                <img src={logo} alt=""style={{marginLeft:'175px',marginTop:'20px' }} />
+                <img src={logo} alt=""style={{marginLeft:'175px',marginTop:'-90px' }} />
             </div>     
             <div className="mt-3">
                 <h1 className='fw-regular ' style={{color: '#8A68A5',fontSize: '18px', marginLeft:'30px',}}>Menú</h1>
@@ -56,9 +76,9 @@ export const Restaurante =()=>{
                 <img src={Fav} alt="" className="ms-1 w-75" />
             </div>
 
-            <div  className="row" style={{width:'100%',height:'100px',background:'#8A68A5',marginLeft:'1px'}}>
+            <div  className="row" style={{width:'110%',height:'100px',background:'#8A68A5'}}>
                 <div className="col-6 ">
-                    <img src={car} alt="" />
+                    <img src={car} alt="" onClick={() => { setShowCarrito(true); setToggleCarrito(true) } } />
                 </div>
                 <div className="col-6">
                     <div className="d-flex p-2">

@@ -17,16 +17,27 @@ import  "assets/styles/global.scss"
 import { useNavigate } from "react-router-dom"
 import { Menu } from "./Menu"
 import "./Home.scss"
+import ListaDirecciones from "Componentes/ListaDirecciones"
 
 export const Home = () =>{
 
     const [showMenu, setShowMenu] = useState(false);
-    const [toggleMenu, setToggleMenu] = useState(false);
+    const [toggleMenu, setToggleMenu] = useState(false);  
 
     const handleToggleMenu = () => {
         setToggleMenu( false )
         setTimeout( () => {
             setShowMenu(false)
+        }, 1000)
+    }
+
+    const [showDir, setShowDir] = useState(false);
+    const [toggleDir, setToggleDir] = useState(false);
+
+    const handleToggleDir = () => {
+        setToggleDir( false )
+        setTimeout( () => {
+            setShowDir(false)
         }, 1000)
     }
 
@@ -48,7 +59,13 @@ export const Home = () =>{
                 <div className="overlay" onClick={() => handleToggleMenu()}></div>
             </>
         }
-        
+        { 
+            showDir && 
+            <>
+                <ListaDirecciones toggleDir={toggleDir} />
+                <div className="overlay" onClick={() => handleToggleDir()}></div>
+            </>
+        }
         <div className="header-home mt-4">
             <div className="row">
                 <div className="col-2 justify-content-center mt-3 ms-3">
@@ -60,7 +77,7 @@ export const Home = () =>{
                         
                         <h1 className='fw-bold' style={{color: '#FFFFFF',fontSize: '17px', marginLeft:'5px' }}>Isabella</h1>
                     </div>
-                    <div className="d-inline-flex p-2 mt-n1 ">
+                    <div className="d-inline-flex p-2 mt-n1 " onClick={() => { setShowDir(true); setToggleDir(true) } }>
                         <img src={ubic} alt="" className="ms-1" style={{width:'12%', height:'12%',marginTop:'1px' }}/>                
                         <h1 className='fw-regular' style={{color: '#FFFFFF',fontSize: '12px', marginLeft:'2px' }}>Carrera 44 #6b-95</h1>
                     </div>
